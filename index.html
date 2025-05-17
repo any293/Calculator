@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type="text/css" href = "styles.css">
+       <link rel = "shortcut icon" type = "image/png" href = 'calculator-5149748_640.png'/>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class = "calculator">
+            <div class = "display">
+                <div id = "accumulator" class = "acc"></div>
+                <div id = "total"class = "total" hidden></div>
+            </div>
+            <div class = "numeric action" onclick = "clear()">C</div>
+            <div class = "numeric action" onclick = "clearCurrent()">CE</div>
+            <div class = "numeric action" onclick = "percent()">%</div>
+            <div class = "numeric action" onclick = "calc('/')">/</div>
+            <div class = "numeric" onclick = "addNum(7)">7</div>
+            <div class = "numeric" onclick = "addNum(8)">8</div>
+            <div class = "numeric" onclick = "addNum(9)">9</div>
+            <div class = "numeric action" onclick = "calc('x')">x</div>
+            <div class = "numeric" onclick = "addNum(4)">4</div>
+            <div class = "numeric" onclick = "addNum(5)">5</div>
+            <div class = "numeric" onclick = "addNum(6)">6</div> 
+            <div class = "numeric action" onclick = "calc('-')">-</div>
+            <div class = "numeric" onclick = "addNum(1)">1</div>
+            <div class = "numeric" onclick = "addNum(2)">2</div>
+            <div class = "numeric" onclick = "addNum(3)">3</div>
+            <div class = "numeric action" onclick = "calc('+')">+</div>
+            <div class = "numeric zero" onclick = "addNum(0)">0</div>  
+            <div class = "numeric" onclick = "addComma()">,</div>
+            <div class = "numeric action result" onclick = "result()">=</div>
+
+        </div>
+
+    </body>
+
+</html>
